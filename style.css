@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+}
+
+.container {
+    margin: 50px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+#tab-uno, #tab-dos, #tab-tres {
+    display: inline-block;
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+ #tab-tres:hover {
+    background-color: palevioletred;
+    border: 2px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.contenido--uno::first-letter, .contenido--dos::first-letter, .contenido--tres::first-letter  {
+    text-transform: capitalize !important;
+}
+
+#tab-uno:hover {
+    background-color: palevioletred;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid black;
+}
+
+#tab-dos:hover {
+    background-color: palevioletred;
+    border: 2px solid black;
+}
+
+.contenido {
+    background-color: violet;
+    width: 609px;
+    height: 300px;
+    box-sizing: border-box;
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+.contenido--uno, .contenido--dos, .contenido--tres {
+    display: none;
+}
+
+#uno:checked ~.contenido .contenido--uno {
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#dos:checked ~.contenido .contenido--dos {
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#tres:checked ~.contenido .contenido--tres {
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
